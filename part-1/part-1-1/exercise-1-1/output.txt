@@ -1,0 +1,8 @@
+Script started on Tue Mar 29 22:17:04 2022
+command: docker ps -as
+CONTAINER ID   IMAGE     COMMAND                  CREATED       STATUS                   PORTS     NAMES            SIZE
+42d551de89bf   nginx     "/docker-entrypoint.…"   3 hours ago   Exited (0) 3 hours ago             busy_poitras     1.09kB (virtual 134MB)
+2d863da5c31e   nginx     "/docker-entrypoint.…"   3 hours ago   Exited (0) 3 hours ago             great_jennings   1.09kB (virtual 134MB)
+3fc0499cd70e   nginx     "/docker-entrypoint.…"   3 hours ago   Up 3 hours               80/tcp    upbeat_shamir    1.09kB (virtual 134MB)
+
+Script done on Tue Mar 29 22:17:04 2022
