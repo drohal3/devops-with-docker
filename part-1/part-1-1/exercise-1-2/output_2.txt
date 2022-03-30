@@ -1,0 +1,5 @@
+Script started on Wed Mar 30 13:55:15 2022
+command: docker images
+REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
+
+Script done on Wed Mar 30 13:55:15 2022

@@ -1,0 +1,5 @@
+Script started on Wed Mar 30 13:53:32 2022
+command: docker ps -a
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+
+Script done on Wed Mar 30 13:53:32 2022
