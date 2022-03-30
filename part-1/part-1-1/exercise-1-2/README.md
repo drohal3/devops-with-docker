@@ -41,13 +41,13 @@ Listing containers and their states:
 docker ps -a 
 ```
 
-Output
+Output:
 ```
 CONTAINER ID   IMAGE     COMMAND                  CREATED        STATUS        PORTS     NAMES
 3fc0499cd70e   nginx     "/docker-entrypoint.…"   19 hours ago   Up 19 hours   80/tcp    upbeat_shamir
 ```
 
-Stopping remaining container:
+Stopping the remaining container:
 ```sh
 docker container stop 3fc0499cd70e
 ```
@@ -63,7 +63,7 @@ CONTAINER ID   IMAGE     COMMAND                  CREATED        STATUS         
 3fc0499cd70e   nginx     "/docker-entrypoint.…"   19 hours ago   Exited (0) About a minute ago             upbeat_shamir
 ```
 
-Removing the exited container, using docker container rm this time:
+Removing the exited container using docker container rm this time:
 ```sh
 docker container rm 3fc0499cd70e
 ```
