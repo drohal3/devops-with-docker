@@ -6,7 +6,7 @@ https://devopswithdocker.com/part-1/1-getting-started
 - Stop 2 of the containers leaving 1 up.
 - Submit the output for docker ps -a which shows 2 stopped containers and one running.
 
-## Solution:
+## Solution
 Creating containers:
 ```sh
 docker container run -d nginx
