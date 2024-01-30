@@ -14,3 +14,7 @@ docker build -t vite-react .
 ```
 docker run --rm -p 3000:3000 vite-react
 ```
+
+published image: https://hub.docker.com/r/drohal3/vita-react
+
+dockerized project: https://github.com/drohal3/devops-with-docker/tree/main/part-1/part-1-6/exercise-1-15/vite-react
