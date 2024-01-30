@@ -1,6 +1,5 @@
-# Running and stopping containers
-https://devopswithdocker.com/part-1/2-running-and-stopping 
-
+# Exercise 1.2: Cleanup
+https://devopswithdocker.com/part-1/section-1
 ## Task
 We've left (in exercise-1-1) containers and an image that won't be used anymore and are taking space, as docker ps -as and docker images will reveal.
 
