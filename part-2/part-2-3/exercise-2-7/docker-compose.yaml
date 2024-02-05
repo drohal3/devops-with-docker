@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  frontend:
+    image: devopswithdocker-frontend
+    build:
+      context: frontend
+      dockerfile: Dockerfile
+    ports:
+      - 5080:5000 # host 5080 to container 5000
+    container_name:  frontend
+  backend:
+    image: devopswithdocker-backend
+    build:
+      context: backend
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080 # <host_port>:<container_port>
+    environment: # ENV variables can be also configured in Dockerfile
+      PORT: 8080
+      REQUEST_ORIGIN: "http://127.0.0.1:5080"
+      REDIS_HOST: "redis"
+      POSTGRES_HOST: "db" # port will default to 5432 the default for Postgres)
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "postgrespswd"
+      POSTGRES_DATABASE: "postgres"
+    container_name: backend
+  redis:
+    image: redis:latest
+    restart: unless-stopped
+  db:
+    image: postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_PASSWORD: "postgrespswd"
+      POSTGRES_USER: "postgres"
+      POSTGRES_DB: "postgres"
+    volumes:
+      - ./database:/var/lib/postgresql/data
+
+
