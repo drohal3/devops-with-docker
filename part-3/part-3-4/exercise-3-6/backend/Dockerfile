@@ -11,9 +11,9 @@ EXPOSE 8080
 
 # Alpine uses the command adduser and addgroup for creating users and groups (rather than useradd and usergroup).
 # https://stackoverflow.com/questions/49955097/how-do-i-add-a-user-when-im-using-alpine-as-a-base-image
-RUN go build \
-    && adduser --system --group appuser \
-    && chown appuser .
+RUN go build && \
+    adduser --system --group appuser && \
+    chown appuser .
 
 USER appuser
 
